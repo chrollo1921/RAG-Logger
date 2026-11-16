@@ -1,0 +1,6 @@
+# Optional: fully local embeddings (default --embeddings local). CPU-only PyTorch keeps the install ~1 GB smaller.
+# Install:  .venv/bin/pip install -r requirements-local-embeddings.txt
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.2,<3
+sentence-transformers>=3,<4
+langchain-huggingface>=0.1,<0.2

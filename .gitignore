@@ -1,0 +1,22 @@
+# Python virtualenvs / caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Project-local runtime data: index, vector store, LLM logs (production log content)
+.raglogger/
+
+# Generated indexes, vector stores and logs elsewhere in the tree (may contain production log data)
+*.json.gz
+*.jsonl
+*.log
+*.log.[0-9]*
+*-chroma/
+chroma/
+!tests/fixtures/*.log
+
+# Local secrets (.env.example is the committed template)
+.env
+.env.*
+!.env.example
